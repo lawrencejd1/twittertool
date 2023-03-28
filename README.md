@@ -7,9 +7,7 @@ This is a Python script that finds the most recent 3200 tweets from a specified 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Create and activate a virtual environment.
-4. Install the required packages using pip:
-
-    `pip install tweepy`
+4. Install the required packages using pip: `pip install tweepy`
 
 ## Usage
 

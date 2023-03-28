@@ -17,13 +17,13 @@ To use the script, you will need to have a Twitter API key and access tokens. On
 
 You can run the script by calling the run() function and passing in the screenName of the user you want to search for.
 
+```
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
 
-    `auth = tweepy.OAuthHandler(consumer_key, consumer_secret)`
-    `auth.set_access_token(access_token, access_token_secret)`
+    api = tweepy.API(auth)
 
-    `api = tweepy.API(auth)`
-
-    `originalTweets = OriginalTweets(api)`
-    `originalTweets.run("elonmusk")`
-
+    originalTweets = OriginalTweets(api)
+    originalTweets.run("elonmusk")
+```
 The script will display the progress of the search and output the top specified number of most liked tweets with their text and links in a tweets.txt file.

@@ -9,7 +9,7 @@ This is a Python script that finds the most recent 3200 tweets from a specified 
 3. Create and activate a virtual environment.
 4. Install the required packages using pip:
 
-`pip install tweepy`
+    `pip install tweepy`
 
 ## Usage
 
@@ -17,13 +17,13 @@ To use the script, you will need to have a Twitter API key and access tokens. On
 
 You can run the script by calling the run() function and passing in the screenName of the user you want to search for.
 
-`
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
 
-api = tweepy.API(auth)
+    `auth = tweepy.OAuthHandler(consumer_key, consumer_secret)`
+    `auth.set_access_token(access_token, access_token_secret)`
 
-originalTweets = OriginalTweets(api)
-originalTweets.run("elonmusk")
-`
+    `api = tweepy.API(auth)`
+
+    `originalTweets = OriginalTweets(api)`
+    `originalTweets.run("elonmusk")`
+
 The script will display the progress of the search and output the top specified number of most liked tweets with their text and links in a tweets.txt file.
